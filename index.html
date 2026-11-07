@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="is-loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The title and description below are English fallbacks for search engines and link previews.
+       On the live page they are replaced from content/en.json or content/ar.json. -->
+  <title>Meshkat — Vetted product talent for GCC &amp; MENA startups</title>
+  <meta name="description" content="Meshkat finds, interviews and scores product managers, product designers and product engineers for funded startups across the GCC and MENA.">
+  <meta name="theme-color" content="#0f1f3d">
+
+  <!-- Sharing (Open Graph / social cards) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Meshkat">
+  <meta property="og:title" content="Meshkat — Vetted product talent for GCC &amp; MENA startups">
+  <meta property="og:description" content="Meshkat finds, interviews and scores product managers, product designers and product engineers for funded startups across the GCC and MENA.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_AR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skip"></a>
+
+  <!-- Shown only if the page text could not load -->
+  <noscript><p class="fallback">This page needs JavaScript to load. Please refresh, or try another browser. · تحتاج هذه الصفحة إلى JavaScript لتعمل.</p></noscript>
+  <p class="fallback" id="load-error" hidden>This page could not load. Please refresh. · تعذّر تحميل الصفحة، يرجى التحديث.</p>
+
+  <!-- 4.1 Top bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="#top"><img src="assets/logo.svg" width="150" height="32" alt="" data-i18n-attr="alt:nav.logoAlt"></a>
+      <div class="topbar-actions">
+        <button type="button" class="lang-switch" id="lang-switch" data-i18n="nav.langSwitch" data-i18n-attr="aria-label:nav.langSwitchLabel"></button>
+        <a class="btn btn-primary btn-sm" href="#forms" data-goto="company" data-i18n="nav.hire"></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 4.2 Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+        <h1 class="hero-title" data-i18n="hero.headlineOptions.0"></h1>
+        <p class="hero-sub" data-i18n="hero.subline"></p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary btn-lg" href="#forms" data-goto="company" data-i18n="hero.ctaHire"></a>
+          <a class="btn btn-secondary" href="#forms" data-goto="talent" data-i18n="hero.ctaJoin"></a>
+        </div>
+        <p class="hero-call">
+          <a class="link-call" href="#forms" data-link="calendar">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            <span data-i18n="hero.ctaCall"></span>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- 4.3 How it works -->
+    <section class="section" id="how">
+      <div class="container">
+        <p class="kicker" data-i18n="how.kicker"></p>
+        <h2 class="section-title" data-i18n="how.title"></h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></svg>
+            <h3 data-i18n="how.steps.0.title"></h3>
+            <p data-i18n="how.steps.0.text"></p>
+          </li>
+          <li class="step-arrow" aria-hidden="true"><svg class="icon flip-rtl" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.6-3.4 3-5.5 6-5.5s5.4 2.1 6 5.5"/><path d="M16 11l2 2 4-4"/></svg>
+            <h3 data-i18n="how.steps.1.title"></h3>
+            <p data-i18n="how.steps.1.text"></p>
+          </li>
+          <li class="step-arrow" aria-hidden="true"><svg class="icon flip-rtl" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11l3-3 3 2 4-4 3 3-7 7-3-2-3 3-3-3z"/><path d="M3 14l3 3"/></svg>
+            <h3 data-i18n="how.steps.2.title"></h3>
+            <p data-i18n="how.steps.2.text"></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4.4 Why Meshkat -->
+    <section class="section section-alt" id="why">
+      <div class="container">
+        <h2 class="section-title" data-i18n="why.title"></h2>
+        <div class="cards">
+          <article class="card">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.4 6.8 19.2l1-5.9L3.5 9.2l5.9-.8z"/></svg>
+            <h3 data-i18n="why.cards.0.title"></h3>
+            <p data-i18n="why.cards.0.text"></p>
+          </article>
+          <article class="card">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10.5l5-3v9l-5-3"/></svg>
+            <h3 data-i18n="why.cards.1.title"></h3>
+            <p data-i18n="why.cards.1.text"></p>
+          </article>
+          <article class="card">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" /></svg>
+            <h3 data-i18n="why.cards.2.title"></h3>
+            <p data-i18n="why.cards.2.text"></p>
+          </article>
+          <article class="card">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            <h3 data-i18n="why.cards.3.title"></h3>
+            <p data-i18n="why.cards.3.text"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.5 Proof (hidden until settings.json "showProof" is true) -->
+    <section class="section" id="proof" hidden>
+      <div class="container">
+        <h2 class="section-title" data-i18n="proof.title"></h2>
+        <figure class="quote">
+          <blockquote><p data-i18n="proof.quote"></p></blockquote>
+          <figcaption><strong data-i18n="proof.name"></strong> · <span data-i18n="proof.role"></span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 4.6 For talent -->
+    <section class="section section-dark" id="talent">
+      <div class="container talent-inner">
+        <div>
+          <p class="kicker kicker-light" data-i18n="talent.kicker"></p>
+          <h2 class="section-title" data-i18n="talent.title"></h2>
+        </div>
+        <div>
+          <ul class="ticks">
+            <li data-i18n="talent.bullets.0"></li>
+            <li data-i18n="talent.bullets.1"></li>
+            <li data-i18n="talent.bullets.2"></li>
+          </ul>
+          <a class="btn btn-accent" href="#forms" data-goto="talent" data-i18n="talent.cta"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.7 Forms -->
+    <section class="section section-alt" id="forms">
+      <div class="container container-narrow">
+        <h2 class="section-title" data-i18n="forms.title"></h2>
+        <p class="section-sub" data-i18n="forms.subtitle"></p>
+
+        <div class="tabs" role="tablist">
+          <button type="button" role="tab" id="tab-company" aria-controls="panel-company" aria-selected="true" data-i18n="forms.tabCompany"></button>
+          <button type="button" role="tab" id="tab-talent" aria-controls="panel-talent" aria-selected="false" tabindex="-1" data-i18n="forms.tabTalent"></button>
+        </div>
+
+        <!-- 5.1 Company form -->
+        <div class="panel" role="tabpanel" id="panel-company" aria-labelledby="tab-company" tabindex="-1">
+          <form class="form" id="form-company" data-form-type="company" novalidate>
+            <p class="req-note" data-i18n="forms.requiredNote"></p>
+            <div class="hp" aria-hidden="true"><label for="c-hp">Website URL</label><input id="c-hp" name="website_url" type="text" tabindex="-1" autocomplete="off"></div>
+
+            <div class="grid-2">
+              <div class="field">
+                <label for="c-fullName"><span data-i18n="forms.company.fullName"></span><span class="req" aria-hidden="true">*</span></label>
+                <input id="c-fullName" name="fullName" type="text" autocomplete="name" required>
+                <p class="field-error" id="c-fullName-err"></p>
+              </div>
+              <div class="field">
+                <label for="c-email"><span data-i18n="forms.company.email"></span><span class="req" aria-hidden="true">*</span></label>
+                <input id="c-email" name="email" type="email" autocomplete="email" inputmode="email" dir="ltr" required data-validate="email">
+                <p class="field-error" id="c-email-err"></p>
+              </div>
+              <div class="field">
+                <label for="c-companyName"><span data-i18n="forms.company.companyName"></span><span class="req" aria-hidden="true">*</span></label>
+                <input id="c-companyName" name="companyName" type="text" autocomplete="organization" required>
+                <p class="field-error" id="c-companyName-err"></p>
+              </div>
+              <div class="field">
+                <label for="c-companyWebsite"><span data-i18n="forms.company.companyWebsite"></span> <span class="opt">(<span data-i18n="forms.optional"></span>)</span></label>
+                <input id="c-companyWebsite" name="companyWebsite" type="url" inputmode="url" autocomplete="url" dir="ltr" data-validate="url">
+                <p class="field-error" id="c-companyWebsite-err"></p>
+              </div>
+              <div class="field">
+                <label for="c-roleTitle"><span data-i18n="forms.company.roleTitle"></span><span class="req" aria-hidden="true">*</span></label>
+                <input id="c-roleTitle" name="roleTitle" type="text" required>
+                <p class="field-error" id="c-roleTitle-err"></p>
+              </div>
+              <div class="field">
+                <label for="c-roleType"><span data-i18n="forms.company.roleType"></span><span class="req" aria-hidden="true">*</span></label>
+                <select id="c-roleType" name="roleType" required data-options="options.roleTypes"></select>
+                <p class="field-error" id="c-roleType-err"></p>
+              </div>
+              <div class="field">
+                <label for="c-level"><span data-i18n="forms.company.level"></span><span class="req" aria-hidden="true">*</span></label>
+                <select id="c-level" name="level" required data-options="options.levels"></select>
+                <p class="field-error" id="c-level-err"></p>
+              </div>
+              <div class="field">
+                <label for="c-workSetup"><span data-i18n="forms.company.workSetup"></span><span class="req" aria-hidden="true">*</span></label>
+                <select id="c-workSetup" name="workSetup" required data-options="options.workSetup"></select>
+                <p class="field-error" id="c-workSetup-err"></p>
+              </div>
+              <div class="field">
+                <label for="c-location"><span data-i18n="forms.company.location"></span><span class="req" aria-hidden="true">*</span></label>
+                <input id="c-location" name="location" type="text" autocomplete="address-level2" required>
+                <p class="field-error" id="c-location-err"></p>
+              </div>
+              <div class="field">
+                <label for="c-salaryRange"><span data-i18n="forms.company.salaryRange"></span> <span class="opt">(<span data-i18n="forms.optional"></span>)</span></label>
+                <input id="c-salaryRange" name="salaryRange" type="text" data-i18n-attr="placeholder:forms.company.salaryHint">
+                <p class="field-error" id="c-salaryRange-err"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="c-timing"><span data-i18n="forms.company.timing"></span><span class="req" aria-hidden="true">*</span></label>
+              <select id="c-timing" name="timing" required data-options="options.timing"></select>
+              <p class="field-error" id="c-timing-err"></p>
+            </div>
+            <div class="field">
+              <label for="c-notes"><span data-i18n="forms.company.notes"></span> <span class="opt">(<span data-i18n="forms.optional"></span>)</span></label>
+              <textarea id="c-notes" name="notes" rows="4"></textarea>
+            </div>
+
+            <p class="form-status" role="alert"></p>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" data-i18n="forms.company.submit" data-label="forms.company.submit"></button>
+          </form>
+          <div class="success" hidden tabindex="-1" role="status">
+            <svg class="icon icon-xl" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg>
+            <p data-i18n="forms.company.success"></p>
+          </div>
+        </div>
+
+        <!-- 5.2 Talent form -->
+        <div class="panel" role="tabpanel" id="panel-talent" aria-labelledby="tab-talent" tabindex="-1" hidden>
+          <form class="form" id="form-talent" data-form-type="talent" novalidate>
+            <p class="req-note" data-i18n="forms.requiredNote"></p>
+            <div class="hp" aria-hidden="true"><label for="t-hp">Website URL</label><input id="t-hp" name="website_url" type="text" tabindex="-1" autocomplete="off"></div>
+
+            <div class="grid-2">
+              <div class="field">
+                <label for="t-fullName"><span data-i18n="forms.talent.fullName"></span><span class="req" aria-hidden="true">*</span></label>
+                <input id="t-fullName" name="fullName" type="text" autocomplete="name" required>
+                <p class="field-error" id="t-fullName-err"></p>
+              </div>
+              <div class="field">
+                <label for="t-email"><span data-i18n="forms.talent.email"></span><span class="req" aria-hidden="true">*</span></label>
+                <input id="t-email" name="email" type="email" autocomplete="email" inputmode="email" dir="ltr" required data-validate="email">
+                <p class="field-error" id="t-email-err"></p>
+              </div>
+              <div class="field">
+                <label for="t-linkedin"><span data-i18n="forms.talent.linkedin"></span><span class="req" aria-hidden="true">*</span></label>
+                <input id="t-linkedin" name="linkedin" type="url" inputmode="url" dir="ltr" required data-validate="url" data-i18n-attr="placeholder:forms.talent.linkedinHint">
+                <p class="field-error" id="t-linkedin-err"></p>
+              </div>
+              <div class="field">
+                <label for="t-currentRole"><span data-i18n="forms.talent.currentRole"></span><span class="req" aria-hidden="true">*</span></label>
+                <select id="t-currentRole" name="currentRole" required data-options="options.roleTypes"></select>
+                <p class="field-error" id="t-currentRole-err"></p>
+              </div>
+              <div class="field">
+                <label for="t-experience"><span data-i18n="forms.talent.experience"></span><span class="req" aria-hidden="true">*</span></label>
+                <select id="t-experience" name="experience" required data-options="options.experience"></select>
+                <p class="field-error" id="t-experience-err"></p>
+              </div>
+              <div class="field">
+                <label for="t-country"><span data-i18n="forms.talent.country"></span><span class="req" aria-hidden="true">*</span></label>
+                <input id="t-country" name="country" type="text" autocomplete="country-name" required>
+                <p class="field-error" id="t-country-err"></p>
+              </div>
+            </div>
+            <fieldset class="field" id="t-openTo" data-required-group="openTo" data-checks="options.openTo">
+              <legend><span data-i18n="forms.talent.openTo"></span><span class="req" aria-hidden="true">*</span></legend>
+              <div class="checks"></div>
+              <p class="field-error" id="t-openTo-err"></p>
+            </fieldset>
+            <div class="field">
+              <label for="t-portfolio"><span data-i18n="forms.talent.portfolio"></span> <span class="opt">(<span data-i18n="forms.optional"></span>)</span></label>
+              <input id="t-portfolio" name="portfolio" type="url" inputmode="url" dir="ltr" data-validate="url">
+              <p class="field-error" id="t-portfolio-err"></p>
+            </div>
+            <div class="field">
+              <label for="t-notes"><span data-i18n="forms.talent.notes"></span> <span class="opt">(<span data-i18n="forms.optional"></span>)</span></label>
+              <textarea id="t-notes" name="notes" rows="4"></textarea>
+            </div>
+
+            <p class="form-status" role="alert"></p>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" data-i18n="forms.talent.submit" data-label="forms.talent.submit"></button>
+          </form>
+          <div class="success" hidden tabindex="-1" role="status">
+            <svg class="icon icon-xl" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg>
+            <p data-i18n="forms.talent.success"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.8 Final call to action -->
+    <section class="section final-cta">
+      <div class="container final-inner">
+        <h2 class="section-title" data-i18n="finalCta.title"></h2>
+        <a class="btn btn-primary btn-lg" href="#forms" data-link="calendar" data-i18n="finalCta.button"></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4.9 Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer.location"></p>
+      <p class="footer-links">
+        <a href="#" data-link="email" data-i18n="footer.contact"></a>
+        <a href="#" data-link="linkedin" target="_blank" rel="noopener" data-i18n="footer.linkedin"></a>
+      </p>
+      <p data-i18n="footer.copyright"></p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "_help": "Settings for the Meshkat page. Replace every value that starts with PASTE_ before launch. Keep the quotes.",
+
+  "formEndpoint": "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE",
+  "calendarUrl": "PASTE_YOUR_CALENDAR_LINK_HERE",
+  "contactEmail": "PASTE_YOUR_CONTACT_EMAIL_HERE",
+  "linkedinUrl": "PASTE_YOUR_LINKEDIN_PAGE_URL_HERE",
+
+  "showProof": false
+}
