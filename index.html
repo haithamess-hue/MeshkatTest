@@ -7,7 +7,7 @@
        On the live page they are replaced from content/en.json or content/ar.json. -->
   <title>Meshkat — Vetted product talent for GCC &amp; MENA startups</title>
   <meta name="description" content="Meshkat finds, interviews and scores product managers, product designers and product engineers for funded startups across the GCC and MENA.">
-  <meta name="theme-color" content="#0f1f3d">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Sharing (Open Graph / social cards) -->
   <meta property="og:type" content="website">
@@ -64,7 +64,42 @@
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
             <span data-i18n="hero.ctaCall"></span>
           </a>
-        </p>
+                </p>
+
+        <!-- Example product preview (all text comes from hero.mock in the content files) -->
+        <figure class="mock-wrap">
+          <div class="mock">
+            <div class="mock-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <div class="mock-head">
+                <span class="mock-avatar" aria-hidden="true"></span>
+                <div>
+                  <p class="mock-name" data-i18n="hero.mock.candidate"></p>
+                  <p class="mock-meta" data-i18n="hero.mock.meta"></p>
+                </div>
+                <span class="mock-tag" data-i18n="hero.mock.tag"></span>
+              </div>
+              <div class="mock-grid">
+                <div class="mock-video">
+                  <span class="mock-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+                  <span class="mock-video-label" data-i18n="hero.mock.video"></span>
+                </div>
+                <div class="mock-score">
+                  <p class="mock-overall"><span class="mock-big" data-i18n="hero.mock.overallValue"></span><span data-i18n="hero.mock.overall"></span></p>
+                  <ul class="mock-bars">
+                    <li style="--v:92%"><span data-i18n="hero.mock.scores.0"></span><i></i></li>
+                    <li style="--v:88%"><span data-i18n="hero.mock.scores.1"></span><i></i></li>
+                    <li style="--v:84%"><span data-i18n="hero.mock.scores.2"></span><i></i></li>
+                    <li style="--v:90%"><span data-i18n="hero.mock.scores.3"></span><i></i></li>
+                    <li style="--v:80%"><span data-i18n="hero.mock.scores.4"></span><i></i></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="mock-verdict" data-i18n="hero.mock.verdict"></p>
+            </div>
+          </div>
+          <figcaption class="mock-caption" data-i18n="hero.mock.caption"></figcaption>
+        </figure>
       </div>
     </section>
 
@@ -102,7 +137,7 @@
     <section class="section section-alt" id="why">
       <div class="container">
         <h2 class="section-title" data-i18n="why.title"></h2>
-        <div class="cards">
+        <div class="cards bento">
           <article class="card">
             <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.4 6.8 19.2l1-5.9L3.5 9.2l5.9-.8z"/></svg>
             <h3 data-i18n="why.cards.0.title"></h3>
@@ -139,8 +174,8 @@
     </section>
 
     <!-- 4.6 For talent -->
-    <section class="section section-dark" id="talent">
-      <div class="container talent-inner">
+    <section class="section" id="talent">
+      <div class="container"><div class="dark-panel talent-inner">
         <div>
           <p class="kicker kicker-light" data-i18n="talent.kicker"></p>
           <h2 class="section-title" data-i18n="talent.title"></h2>
@@ -153,6 +188,7 @@
           </ul>
           <a class="btn btn-accent" href="#forms" data-goto="talent" data-i18n="talent.cta"></a>
         </div>
+      </div>
       </div>
     </section>
 
@@ -310,9 +346,10 @@
 
     <!-- 4.8 Final call to action -->
     <section class="section final-cta">
-      <div class="container final-inner">
+      <div class="container"><div class="dark-panel final-inner">
         <h2 class="section-title" data-i18n="finalCta.title"></h2>
-        <a class="btn btn-primary btn-lg" href="#forms" data-link="calendar" data-i18n="finalCta.button"></a>
+        <a class="btn btn-light btn-lg" href="#forms" data-link="calendar" data-i18n="finalCta.button"></a>
+      </div>
       </div>
     </section>
   </main>

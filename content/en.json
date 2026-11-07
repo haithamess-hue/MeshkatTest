@@ -17,27 +17,65 @@
       "Your next product hire, already interviewed.",
       "Product talent, scored before you meet them."
     ],
-    "subline": "Meshkat finds, interviews and scores product managers, product designers and product engineers for startups across the GCC and MENA.",
+    "subline": "We find product managers, designers and engineers for startups in the GCC and MENA. Every candidate is interviewed on video and scored before you meet them.",
     "ctaHire": "Hire talent",
     "ctaJoin": "Join the network",
-    "ctaCall": "Book a 15-min call"
+    "ctaCall": "Book a 15-min call",
+    "mock": {
+      "tag": "Example",
+      "candidate": "Candidate A · Senior Product Manager",
+      "meta": "7 yrs · Fintech · Open to remote",
+      "video": "Recorded interview · 30 min",
+      "overall": "/ 5 overall",
+      "overallValue": "4.4",
+      "scores": [
+        "Product sense",
+        "Execution",
+        "Data & metrics",
+        "Communication",
+        "Leadership"
+      ],
+      "verdict": "✓ Recommended — ready to meet",
+      "caption": "What you get for every candidate (example)."
+    }
   },
   "how": {
     "kicker": "For companies",
     "title": "How it works",
     "steps": [
-      { "title": "Tell us the role", "text": "Share what you need in 2 minutes." },
-      { "title": "Meet 3 vetted candidates", "text": "Each with a recorded interview and a clear score." },
-      { "title": "Hire", "text": "You pick, we handle the follow-up." }
+      {
+        "title": "Tell us the role",
+        "text": "A 2-minute form. That’s it."
+      },
+      {
+        "title": "Meet 3 vetted candidates",
+        "text": "Each one comes with a recorded interview and a clear score."
+      },
+      {
+        "title": "Hire",
+        "text": "You pick. We handle the follow-up."
+      }
     ]
   },
   "why": {
-    "title": "Why Meshkat",
+    "title": "Why founders use Meshkat",
     "cards": [
-      { "title": "Scored, not just screened", "text": "Every candidate is rated on a 5-part scorecard." },
-      { "title": "See them before you meet them", "text": "Recorded video interviews for every candidate." },
-      { "title": "Product focus", "text": "We only do product roles, so we know what good looks like." },
-      { "title": "Built for the region", "text": "GCC, Jordan and wider MENA." }
+      {
+        "title": "Scored, not screened",
+        "text": "Every candidate is rated on the same 5-part scorecard. You compare scores, not CVs."
+      },
+      {
+        "title": "See them before you meet them",
+        "text": "Watch the interview before you spend an hour on a call."
+      },
+      {
+        "title": "Product only",
+        "text": "PMs, designers and engineers. Nothing else. We know what good looks like."
+      },
+      {
+        "title": "Built for the region",
+        "text": "Built in Amman for teams across the GCC, Jordan and MENA."
+      }
     ]
   },
   "proof": {
@@ -48,7 +86,7 @@
   },
   "talent": {
     "kicker": "For talent",
-    "title": "Product people: get matched with funded startups.",
+    "title": "Product people: one interview, then startups come to you.",
     "bullets": [
       "One interview, many opportunities.",
       "Startups that are funded and growing.",
@@ -58,7 +96,7 @@
   },
   "forms": {
     "title": "Let's get started",
-    "subtitle": "Pick one. It takes about 2 minutes.",
+    "subtitle": "Takes about 2 minutes.",
     "tabCompany": "I'm hiring",
     "tabTalent": "I want to join",
     "requiredNote": "Fields marked * are required.",
@@ -102,39 +140,108 @@
   },
   "options": {
     "roleTypes": [
-      { "value": "Product Manager", "label": "Product Manager" },
-      { "value": "Product Designer", "label": "Product Designer" },
-      { "value": "Product Engineer", "label": "Product Engineer" },
-      { "value": "Other", "label": "Other" }
+      {
+        "value": "Product Manager",
+        "label": "Product Manager"
+      },
+      {
+        "value": "Product Designer",
+        "label": "Product Designer"
+      },
+      {
+        "value": "Product Engineer",
+        "label": "Product Engineer"
+      },
+      {
+        "value": "Other",
+        "label": "Other"
+      }
     ],
     "levels": [
-      { "value": "Junior", "label": "Junior" },
-      { "value": "Mid", "label": "Mid" },
-      { "value": "Senior", "label": "Senior" },
-      { "value": "Lead", "label": "Lead" },
-      { "value": "Head of", "label": "Head of" }
+      {
+        "value": "Junior",
+        "label": "Junior"
+      },
+      {
+        "value": "Mid",
+        "label": "Mid"
+      },
+      {
+        "value": "Senior",
+        "label": "Senior"
+      },
+      {
+        "value": "Lead",
+        "label": "Lead"
+      },
+      {
+        "value": "Head of",
+        "label": "Head of"
+      }
     ],
     "workSetup": [
-      { "value": "On-site", "label": "On-site" },
-      { "value": "Hybrid", "label": "Hybrid" },
-      { "value": "Remote", "label": "Remote" }
+      {
+        "value": "On-site",
+        "label": "On-site"
+      },
+      {
+        "value": "Hybrid",
+        "label": "Hybrid"
+      },
+      {
+        "value": "Remote",
+        "label": "Remote"
+      }
     ],
     "timing": [
-      { "value": "ASAP", "label": "ASAP" },
-      { "value": "Within 1 month", "label": "Within 1 month" },
-      { "value": "1-3 months", "label": "1–3 months" },
-      { "value": "Just exploring", "label": "Just exploring" }
+      {
+        "value": "ASAP",
+        "label": "ASAP"
+      },
+      {
+        "value": "Within 1 month",
+        "label": "Within 1 month"
+      },
+      {
+        "value": "1-3 months",
+        "label": "1–3 months"
+      },
+      {
+        "value": "Just exploring",
+        "label": "Just exploring"
+      }
     ],
     "experience": [
-      { "value": "0-2", "label": "0–2 years" },
-      { "value": "3-5", "label": "3–5 years" },
-      { "value": "6-9", "label": "6–9 years" },
-      { "value": "10+", "label": "10+ years" }
+      {
+        "value": "0-2",
+        "label": "0–2 years"
+      },
+      {
+        "value": "3-5",
+        "label": "3–5 years"
+      },
+      {
+        "value": "6-9",
+        "label": "6–9 years"
+      },
+      {
+        "value": "10+",
+        "label": "10+ years"
+      }
     ],
     "openTo": [
-      { "value": "Remote", "label": "Remote" },
-      { "value": "Moving to another country", "label": "Moving to another country" },
-      { "value": "On-site in my city", "label": "On-site in my city" }
+      {
+        "value": "Remote",
+        "label": "Remote"
+      },
+      {
+        "value": "Moving to another country",
+        "label": "Moving to another country"
+      },
+      {
+        "value": "On-site in my city",
+        "label": "On-site in my city"
+      }
     ]
   },
   "errors": {
@@ -145,8 +252,8 @@
     "checkbox": "Please pick at least one."
   },
   "finalCta": {
-    "title": "Prefer to talk first?",
-    "button": "Book a call"
+    "title": "Rather talk first?",
+    "button": "Book a 15-min call"
   },
   "footer": {
     "location": "Meshkat · Amman, Jordan",
