@@ -124,7 +124,7 @@ Then open <http://localhost:8000>.
 - [ ] **Native review of the Arabic copy**: all of `content/ar.json` (written in natural modern Arabic, but not yet reviewed by a native editor)
 - [ ] **Client proof**: kept hidden (`showProof: false`). To show it, get approval, fill in `proof` in both files, and set `showProof` to `true`. Never use invented quotes.
 - [ ] **Logo**: replace `assets/logo.svg`, `assets/favicon.svg`, `assets/favicon-32.png` and `assets/apple-touch-icon.png`
-- [ ] **Brand colors**: the top of `assets/style.css` (currently near-black `#0a0a0a` with amber `#f59e0b`, in a modern startup style)
+- [ ] **Brand colors**: the top of `assets/style.css` (dark mode: near-black page `#09090b`, light text, white buttons and an amber `#f59e0b` accent)
 - [ ] **Example scorecard in the hero**: `hero.mock` in both language files. Change the 5 score names (`scores`) to match your real 5-part scorecard. The candidate shown is a made-up **example** and is labelled "Example" on the page; keep it that way, or swap in a real candidate only with their permission. Bar lengths are set in `index.html` (`--v:92%` etc.).
 - [ ] **Share image**: replace `assets/og-image.png` (1200×630) with the final brand
 - [ ] **Domain name**: connect it in Netlify or Vercel. After that, in `index.html` change `content="assets/og-image.png"` to the full address, for example `content="https://meshkat.co/assets/og-image.png"`, so the share picture works everywhere.
