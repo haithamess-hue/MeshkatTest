@@ -1,4 +1,4 @@
-/* Meshkat landing page — fills text from content/*.json, handles language, tabs and forms.
+/* Meshkat landing page — fills text from content/*.json, handles language and the form.
    You should not need to edit this file to change any wording: edit content/en.json, content/ar.json
    and content/settings.json instead. */
 (function () {
@@ -162,41 +162,16 @@
     document.getElementById('proof').hidden = s.showProof !== true;
   }
 
-  /* ---------- tabs ---------- */
-  var tabs = {};
-  function selectTab(type, focusTab) {
-    ['company', 'talent'].forEach(function (k) {
-      var on = k === type;
-      tabs[k].tab.setAttribute('aria-selected', on ? 'true' : 'false');
-      tabs[k].tab.tabIndex = on ? 0 : -1;
-      tabs[k].panel.hidden = !on;
-    });
-    if (focusTab) tabs[type].tab.focus();
-  }
-
-  function setupTabs() {
-    ['company', 'talent'].forEach(function (k) {
-      tabs[k] = { tab: document.getElementById('tab-' + k), panel: document.getElementById('panel-' + k) };
-      tabs[k].tab.addEventListener('click', function () { selectTab(k); });
-      tabs[k].tab.addEventListener('keydown', function (e) {
-        if (['ArrowLeft', 'ArrowRight', 'Home', 'End'].indexOf(e.key) === -1) return;
-        e.preventDefault();
-        selectTab(k === 'company' ? 'talent' : 'company', true);
-      });
-    });
-
-    // "Hire talent" / "Join the network" buttons open the right form
+  /* ---------- "Hire talent" buttons ---------- */
+  function setupGoto() {
+    // Every "Hire talent" button scrolls to the request form
     document.addEventListener('click', function (e) {
       var link = e.target.closest('[data-goto]');
       if (!link) return;
       e.preventDefault();
-      var type = link.getAttribute('data-goto');
-      selectTab(type);
       document.getElementById('forms').scrollIntoView();
-      tabs[type].panel.focus({ preventScroll: true });
+      document.getElementById('panel-company').focus({ preventScroll: true });
     });
-
-    if (location.hash === '#join') selectTab('talent');
   }
 
   /* ---------- form validation ---------- */
@@ -361,7 +336,7 @@
 
   /* ---------- start ---------- */
   function start() {
-    setupTabs();
+    setupGoto();
     document.querySelectorAll('form[data-form-type]').forEach(setupForm);
     document.getElementById('lang-switch').addEventListener('click', function () {
       setLanguage(state.lang === 'en' ? 'ar' : 'en').catch(function (err) {

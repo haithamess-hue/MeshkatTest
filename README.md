@@ -1,6 +1,6 @@
 # Meshkat — landing page (MVP)
 
-One page that explains Meshkat to **companies who want to hire** and **product people who want to join**. It works in English and Arabic, has two forms, and sends every answer to a Google Sheet and to your email.
+One page for **companies who want to hire** product people. It works in English and Arabic, has one request form, and sends every answer to a Google Sheet and to your email.
 
 ---
 
@@ -69,7 +69,7 @@ Open `content/settings.json`:
 
    Keep the quotes around both values.
 6. Click the **Save** icon (💾).
-7. Optional check: in the function dropdown at the top, pick **`testSetup`**, then click **Run**. Google will ask for permission. Click **Review permissions**, choose your account, then **Advanced → Go to (project name) → Allow**. This screen is normal for your own scripts. It then creates the "Companies" and "Talent" tabs and sends you a test email.
+7. Optional check: in the function dropdown at the top, pick **`testSetup`**, then click **Run**. Google will ask for permission. Click **Review permissions**, choose your account, then **Advanced → Go to (project name) → Allow**. This screen is normal for your own scripts. It then creates the "Companies" tab and sends you a test email.
 8. Click **Deploy → New deployment**. Click the gear ⚙ next to "Select type" and choose **Web app**. Then set:
    - **Execute as:** Me
    - **Who has access:** Anyone
@@ -77,11 +77,11 @@ Open `content/settings.json`:
    Click **Deploy** and allow the permissions if asked.
 9. Copy the **Web app URL**. It looks like `https://script.google.com/macros/s/.../exec`.
 10. Paste it into `content/settings.json` as the value of `"formEndpoint"`, then re-deploy the site (see below).
-11. Test it: send each form once from the live site. A new row should appear in the sheet and an email should arrive within a minute.
+11. Test it: send the form once from the live site. A new row should appear in the sheet and an email should arrive within a minute.
 
 **If you edit `Code.gs` later:** in Apps Script, go to **Deploy → Manage deployments → ✏️ Edit**, set **Version: New version**, and click **Deploy**. The URL stays the same.
 
-**What gets saved:** each form gets its own tab ("Companies" or "Talent"). The tab is created with a header row the first time it's needed. Each row holds the time (Amman time), every answer, the visitor's language, the UTM values and the page URL. Spam bots that fill in the hidden trap field are silently ignored.
+**What gets saved:** every request goes into the "Companies" tab. The tab is created with a header row the first time it's needed. Each row holds the time (Amman time), every answer, the visitor's language, the UTM values and the page URL. Spam bots that fill in the hidden trap field are silently ignored.
 
 ---
 
@@ -133,5 +133,5 @@ Then open <http://localhost:8000>.
 ## Good to know
 
 - Link previews (WhatsApp, LinkedIn) always use the **English** title, description and image written in `index.html`, because those apps don't run the page's code. Visitors still see Arabic on the page itself.
-- Form answers are sent with a "fire and forget" request (this is how Google Apps Script works with websites). The visitor sees "Thanks" once the request leaves their browser. That's why step 11 above, a real test of each form, matters.
+- Form answers are sent with a "fire and forget" request (this is how Google Apps Script works with websites). The visitor sees "Thanks" once the request leaves their browser. That's why step 11 above, a real test of the form, matters.
 - CV file uploads, logins and dashboards are out of scope for this version on purpose.

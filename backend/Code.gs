@@ -1,7 +1,7 @@
 /**
  * Meshkat — form backend (Google Apps Script)
  * ------------------------------------------------------------
- * Receives the two forms from the landing page, writes one row per
+ * Receives the company request form from the landing page, writes one row per
  * answer into a Google Sheet, and emails you a copy.
  *
  * Setup steps are in README.md → "Connect the forms".
@@ -43,23 +43,6 @@ const FORMS = {
     ],
     subject: function (p) {
       return 'New company request — ' + (p.companyName || '?') + ' — ' + (p.roleTitle || '?');
-    },
-  },
-  talent: {
-    sheet: 'Talent',
-    fields: [
-      ['fullName', 'Full name'],
-      ['email', 'Email'],
-      ['linkedin', 'LinkedIn'],
-      ['currentRole', 'Current role'],
-      ['experience', 'Years of experience'],
-      ['country', 'Country'],
-      ['openTo', 'Open to'],
-      ['portfolio', 'Portfolio / CV link'],
-      ['notes', 'Anything else'],
-    ],
-    subject: function (p) {
-      return 'New talent — ' + (p.fullName || '?') + ' — ' + (p.currentRole || '?');
     },
   },
 };

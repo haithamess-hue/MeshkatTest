@@ -19,7 +19,6 @@
     ],
     "subline": "We find product managers, designers and engineers for startups in the GCC and MENA. Every candidate is interviewed on video and scored before you meet them.",
     "ctaHire": "Hire talent",
-    "ctaJoin": "Join the network",
     "ctaCall": "Book a 15-min call",
     "mock": {
       "tag": "Example",
@@ -40,7 +39,7 @@
     }
   },
   "how": {
-    "kicker": "For companies",
+    "kicker": "3 steps",
     "title": "How it works",
     "steps": [
       {
@@ -84,21 +83,9 @@
     "name": "[PLACEHOLDER] Name",
     "role": "[PLACEHOLDER] Role, Company"
   },
-  "talent": {
-    "kicker": "For talent",
-    "title": "Product people: one interview, then startups come to you.",
-    "bullets": [
-      "One interview, many opportunities.",
-      "Startups that are funded and growing.",
-      "Honest feedback on your score."
-    ],
-    "cta": "Join the network"
-  },
   "forms": {
-    "title": "Let's get started",
-    "subtitle": "Takes about 2 minutes.",
-    "tabCompany": "I'm hiring",
-    "tabTalent": "I want to join",
+    "title": "Tell us who you need",
+    "subtitle": "Takes about 2 minutes. We reply within 1 working day.",
     "requiredNote": "Fields marked * are required.",
     "optional": "optional",
     "choose": "Choose…",
@@ -122,20 +109,6 @@
       "notes": "Anything else we should know?",
       "submit": "Send request",
       "success": "Thanks — we'll reply within 1 working day."
-    },
-    "talent": {
-      "fullName": "Full name",
-      "email": "Email",
-      "linkedin": "LinkedIn profile",
-      "linkedinHint": "e.g. linkedin.com/in/your-name",
-      "currentRole": "Current role",
-      "experience": "Years of experience",
-      "country": "Country you live in",
-      "openTo": "Open to",
-      "portfolio": "Portfolio or CV link",
-      "notes": "Anything else?",
-      "submit": "Join the network",
-      "success": "You're in. We'll reach out when there's a role that fits."
     }
   },
   "options": {
@@ -210,46 +183,13 @@
         "value": "Just exploring",
         "label": "Just exploring"
       }
-    ],
-    "experience": [
-      {
-        "value": "0-2",
-        "label": "0–2 years"
-      },
-      {
-        "value": "3-5",
-        "label": "3–5 years"
-      },
-      {
-        "value": "6-9",
-        "label": "6–9 years"
-      },
-      {
-        "value": "10+",
-        "label": "10+ years"
-      }
-    ],
-    "openTo": [
-      {
-        "value": "Remote",
-        "label": "Remote"
-      },
-      {
-        "value": "Moving to another country",
-        "label": "Moving to another country"
-      },
-      {
-        "value": "On-site in my city",
-        "label": "On-site in my city"
-      }
     ]
   },
   "errors": {
     "required": "Please fill this in.",
     "select": "Please choose one.",
     "email": "Please enter a valid email, like name@company.com.",
-    "url": "Please enter a valid link, like example.com.",
-    "checkbox": "Please pick at least one."
+    "url": "Please enter a valid link, like example.com."
   },
   "finalCta": {
     "title": "Rather talk first?",
